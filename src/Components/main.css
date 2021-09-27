@@ -20,3 +20,12 @@ img{
     padding: .2rem;
     margin-bottom: 2rem;
   }
+
+  button{
+    cursor: pointer;
+    padding: .3rem .5rem;
+  }
+
+  span{
+    font-weight: 700;
+  }

@@ -1,10 +1,15 @@
 import Card from "./Components/Card";
+import CardSet from "./Components/CardSet";
 import Classes from "./Components/Classes";
+import Counter from "./Components/Counter";
 import EventAndState from "./Components/EventAndState";
+import NewCard from "./Components/NewCard";
 import SimpleEvents from "./Components/SimpleEvents";
 import StateInAction from "./Components/StateInAction";
 import StatePractice from "./Components/StatePractice";
 import Title from "./Components/Title";
+
+console.log(NewCard)
 
 // const data = [
 //   {
@@ -88,7 +93,12 @@ function App() {
       {/* <StateInAction name = 'Rob'/> */}
       {/* <SimpleEvents/>*/}
       {/* <EventAndState/> */}
-      <StatePractice/>
+      {/* <StatePractice/> */}
+      {/* <Counter/> */}
+      <div className = 'row'>
+        <CardSet cards = {NewCard}/>
+      </div>
+      
     </div>
   );
 }
