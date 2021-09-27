@@ -1,5 +1,9 @@
 import Card from "./Components/Card";
 import Classes from "./Components/Classes";
+import EventAndState from "./Components/EventAndState";
+import SimpleEvents from "./Components/SimpleEvents";
+import StateInAction from "./Components/StateInAction";
+import StatePractice from "./Components/StatePractice";
 import Title from "./Components/Title";
 
 // const data = [
@@ -81,6 +85,10 @@ function App() {
 
       {/* {cards} */}
       {/* {classCards} */}
+      {/* <StateInAction name = 'Rob'/> */}
+      {/* <SimpleEvents/>*/}
+      {/* <EventAndState/> */}
+      <StatePractice/>
     </div>
   );
 }
