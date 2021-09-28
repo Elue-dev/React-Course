@@ -6,6 +6,7 @@ import EventAndState from "./Components/EventAndState";
 import NewCard from "./Components/NewCard";
 import SimpleEvents from "./Components/SimpleEvents";
 import StateInAction from "./Components/StateInAction";
+import StateInFunctions from "./Components/StateInFunctions";
 import StatePractice from "./Components/StatePractice";
 import Title from "./Components/Title";
 
@@ -95,9 +96,10 @@ function App() {
       {/* <EventAndState/> */}
       {/* <StatePractice/> */}
       {/* <Counter/> */}
-      <div className = 'row'>
+      {/* <div className = 'row'>
         <CardSet cards = {NewCard}/>
-      </div>
+      </div> */}
+      <StateInFunctions/>
       
     </div>
   );
