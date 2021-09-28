@@ -4,6 +4,7 @@ import Classes from "./Components/Classes";
 import Counter from "./Components/Counter";
 import EventAndState from "./Components/EventAndState";
 import NewCard from "./Components/NewCard";
+import ReUseState from "./Components/ReUseState";
 import SimpleEvents from "./Components/SimpleEvents";
 import StateInAction from "./Components/StateInAction";
 import StateInFunctions from "./Components/StateInFunctions";
@@ -99,7 +100,8 @@ function App() {
       {/* <div className = 'row'>
         <CardSet cards = {NewCard}/>
       </div> */}
-      <StateInFunctions/>
+      <StateInFunctions name = "Wisdom" age = "24" course = "Vet"/>
+      <ReUseState/>
       
     </div>
   );
