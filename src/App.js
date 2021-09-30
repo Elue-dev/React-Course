@@ -1,9 +1,13 @@
+import axios from "axios";
+import Axios from "./Components/Axios";
+import Axios2 from "./Components/Axios2";
 import Card from "./Components/Card";
 import CardSet from "./Components/CardSet";
 import Classes from "./Components/Classes";
 import Counter from "./Components/Counter";
 import EventAndState from "./Components/EventAndState";
-import NewCard from "./Components/NewCard";
+import FuncState from "./Components/FuncState";
+import newcard from "./Components/newcard";
 import ReUseState from "./Components/ReUseState";
 import SimpleEvents from "./Components/SimpleEvents";
 import StateInAction from "./Components/StateInAction";
@@ -11,7 +15,8 @@ import StateInFunctions from "./Components/StateInFunctions";
 import StatePractice from "./Components/StatePractice";
 import Title from "./Components/Title";
 
-console.log(NewCard)
+
+console.log(newcard)
 
 // const data = [
 //   {
@@ -70,6 +75,8 @@ const data = [
 
 
 function App() {
+  
+
   return (
     <div className="App">
       <Title/>
@@ -98,10 +105,14 @@ function App() {
       {/* <StatePractice/> */}
       {/* <Counter/> */}
       {/* <div className = 'row'>
-        <CardSet cards = {NewCard}/>
+        <CardSet cards = {newcard}/>
       </div> */}
-      <StateInFunctions name = "Wisdom" age = "24" course = "Vet"/>
-      <ReUseState/>
+      {/* <StateInFunctions name = "Wisdom" age = "24" course = "Vet"/> */}
+      {/* <ReUseState/> */}
+      {/* <FuncState/> */}
+      {/* <Axios/> */}
+      <Axios2/>
+
       
     </div>
   );

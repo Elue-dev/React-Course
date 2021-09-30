@@ -29,3 +29,7 @@ img{
   span{
     font-weight: 700;
   }
+
+  .modal-img{
+    width: 80px;
+  }
