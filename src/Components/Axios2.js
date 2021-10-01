@@ -14,7 +14,7 @@ export class Axios2 extends Component {
             cityName: '',
             icon: '',
             description: '',
-
+            isClear: '',
         }
     }
 
@@ -25,6 +25,18 @@ export class Axios2 extends Component {
         var elems = document.querySelectorAll('.modal');
         var instances = window.M.Modal.init(elems);
         
+    }
+
+    componentDidUpdate(prevState){
+        const clear = this.state.weather.includes('clouds')
+        if(this.state.weather !== prevState.weather){
+            if(clear){
+                this.setState({
+                    isClear: 'Clear sky'
+                })
+            }
+        }
+        console.log(clear)
     }
 
     searchCity = (e) => {
@@ -57,6 +69,7 @@ export class Axios2 extends Component {
                  <div className="row">
                     <div className="col s6 offset-s3">
                         <h3>{this.state.temp} degrees</h3>
+                        <h3>{this.state.isClear}</h3>
                             <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Details</a> 
                             <br/><br/>
                             <form onSubmit= {this.searchCity}>

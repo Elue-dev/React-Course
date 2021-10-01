@@ -15,10 +15,13 @@ export class Axios extends Component {
             low: '',
             icon: '',
             cityName: '',
+            
         }
 
 
  }
+
+ 
 
  componentDidMount(){
     const url = 'https://api.openweathermap.org/data/2.5/weather?q=London&units=imperial&appid=e312dbeb8840e51f92334498a261ca1d'
@@ -59,9 +62,9 @@ export class Axios extends Component {
         const iconUrl = `http://openweathermap.org/img/wn/${this.state.icon}@2x.png`
         
         return (
+          <div>
             <div>
                 <div className="row">
-                    <div className="col s6 offset-s3">
                         <h3>Temperature: {this.state.temp}</h3>
                         <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Details</a>
                         <form onSubmit = {this.searchCity}>

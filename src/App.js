@@ -6,6 +6,7 @@ import CardSet from "./Components/CardSet";
 import Classes from "./Components/Classes";
 import Counter from "./Components/Counter";
 import EventAndState from "./Components/EventAndState";
+import Form from "./Components/Form";
 import FuncState from "./Components/FuncState";
 import newcard from "./Components/newcard";
 import ReUseState from "./Components/ReUseState";
@@ -111,7 +112,8 @@ function App() {
       {/* <ReUseState/> */}
       {/* <FuncState/> */}
       {/* <Axios/> */}
-      <Axios2/>
+      {/* <Axios2/> */}
+      <Form/>
 
       
     </div>
