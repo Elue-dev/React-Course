@@ -14,6 +14,8 @@ import SimpleEvents from "./Components/SimpleEvents";
 import StateInAction from "./Components/StateInAction";
 import StateInFunctions from "./Components/StateInFunctions";
 import StatePractice from "./Components/StatePractice";
+import BoilingVerdict from "./Components/temperatureApp/BoilingVerdict";
+import Calculator from "./Components/temperatureApp/Calculator";
 import Title from "./Components/Title";
 
 
@@ -113,7 +115,9 @@ function App() {
       {/* <FuncState/> */}
       {/* <Axios/> */}
       {/* <Axios2/> */}
-      <Form/>
+      {/* <Form/> */}
+      <Calculator/>
+      <BoilingVerdict/>
 
       
     </div>
