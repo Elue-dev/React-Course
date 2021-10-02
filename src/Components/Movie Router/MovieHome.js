@@ -31,8 +31,11 @@ export class MovieHome extends Component {
         const movieGrid = newMovieState.map((movie, index) => {
             return(
                 <div className="col s3" key = {index}>
-                    <img src = {`${imageUrl}${movie.poster_path}`} />
-                </div> //poster_path is of the array from the api
+                    <Link to = {`/movie/${movie.id}`}>
+                        <img src = {`${imageUrl}${movie.poster_path}`} />
+                    </Link>
+                </div> //poster_path is part of the array from the api
+                   
             )
         })
         return (
