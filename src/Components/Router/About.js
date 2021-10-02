@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Link} from 'react-router-dom'
+import {Route, NavLink} from 'react-router-dom'
 import HelpCustomer from './HelpCustomer'
 import HelpHost from './HelpHost'
 
@@ -8,13 +8,14 @@ function About() {
         <div>
             <h1> About page Header</h1>
             <br/><br/> 
-            <Link to = "/about/customer">
-                Render the customer content
-            </Link>
-            <br/>
-            <Link to = "/about/host">
-                Render the host content
-            </Link>
+            <div className="link-flex">
+                <NavLink to = "/about/customer">
+                <p className = "render">Customer content</p>
+                </NavLink>
+                <NavLink to = "/about/host">
+                <p className = "render">Host content</p>
+                </NavLink>
+            </div>
             <br/><br/>
             <Route path = "/about/customer" component = {HelpCustomer} />
             <Route path = "/about/host" component = {HelpHost} />

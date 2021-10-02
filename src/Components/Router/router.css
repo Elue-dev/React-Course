@@ -29,3 +29,18 @@ ul li{
 ul li:hover{
     color: rgb(0, 132, 255);
 }
+
+.render{
+    color: #333;
+    margin-right: 1rem;
+}
+
+.render:hover{
+    color: rgb(0, 132, 255);
+}
+
+.link-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

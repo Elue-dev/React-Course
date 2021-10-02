@@ -9,6 +9,7 @@ import Counter from "./Components/Counter";
 import EventAndState from "./Components/EventAndState";
 import Form from "./Components/Form";
 import FuncState from "./Components/FuncState";
+import MovieApp from "./Components/Movie Router/MovieApp";
 import newcard from "./Components/newcard";
 import ReUseState from "./Components/ReUseState";
 import RouterApp from "./Components/Router/RouterApp";
@@ -121,7 +122,8 @@ function App() {
       {/* <Calculator/> */}
       {/* <BoilingVerdict/> */}
       {/* <MainApp/> */}
-      <RouterApp/>
+      {/* <RouterApp/> */}
+      <MovieApp/>
 
       
     </div>
