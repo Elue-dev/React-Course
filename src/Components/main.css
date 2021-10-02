@@ -16,7 +16,7 @@ img{
   .title{
     background-color: #333;
     color: #fff;
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
     padding: .2rem;
     margin-bottom: 2rem;
   }
@@ -33,3 +33,5 @@ img{
   .modal-img{
     width: 80px;
   }
+
+  

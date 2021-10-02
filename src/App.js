@@ -1,4 +1,5 @@
 import axios from "axios";
+import MainApp from "./Components/AWS Project/MainApp";
 import Axios from "./Components/Axios";
 import Axios2 from "./Components/Axios2";
 import Card from "./Components/Card";
@@ -10,6 +11,7 @@ import Form from "./Components/Form";
 import FuncState from "./Components/FuncState";
 import newcard from "./Components/newcard";
 import ReUseState from "./Components/ReUseState";
+import RouterApp from "./Components/Router/RouterApp";
 import SimpleEvents from "./Components/SimpleEvents";
 import StateInAction from "./Components/StateInAction";
 import StateInFunctions from "./Components/StateInFunctions";
@@ -116,8 +118,10 @@ function App() {
       {/* <Axios/> */}
       {/* <Axios2/> */}
       {/* <Form/> */}
-      <Calculator/>
-      <BoilingVerdict/>
+      {/* <Calculator/> */}
+      {/* <BoilingVerdict/> */}
+      {/* <MainApp/> */}
+      <RouterApp/>
 
       
     </div>
